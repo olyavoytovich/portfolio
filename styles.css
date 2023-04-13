@@ -1,0 +1,125 @@
+body {
+    background: #84C7C7;
+    font-family: 'Orbitron', sans-serif;
+    color: #003F68;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+p span {
+    display: block;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 50px 50px minmax(500px, auto) 100px;
+}
+
+.item-1, .item-2, .item-4, .item-5 {
+    grid-area: span 2 / span 1;
+}
+
+.item-3 {
+    grid-area: span 1 / span 4;
+}
+
+.item-11, .item-12, .item-18 {
+    grid-area: span 1 / span 3;
+}
+
+.item {
+    border-bottom: solid #003F68;
+    border-right: solid #003F68;
+}
+
+.item-14, .item-15, .item-16, .item-17, .item-18, .item-19 {
+    border-bottom: none;
+}
+
+.item-5, .item-13, .item-19, .item-15, .item-16{
+    border-right: none;
+}
+
+.item-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.item-11, .item-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-header {
+    font-size: 34px;
+}
+
+.p-sub-header {
+    font-size: 20px;
+}
+
+.box-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 95%;
+}
+
+.ava {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.box-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85%;
+    height: 95%;
+}
+
+.p-name {
+    font-size: 56px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.p-about-text {
+    font-family: 'Istok Web', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer-box-top {
+    height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.footer-box-bottom {
+    font-family: 'Istok Web', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
