@@ -34,10 +34,7 @@ p span {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 50px 50px;
-    font-weight: 600;
-    font-size: 2.7vw;
 }
-
 
 .item-header-left, .item-header-about, .item-header-CV, .item-header-right {
     grid-area: span 2 / span 1;
@@ -65,13 +62,13 @@ p span {
     outline: none;
     position: relative;
     cursor: pointer;
-    font-size: 3vw;
+    font-size: 2.6vw;
     font-weight: bold;
     font-family: 'Orbitron', sans-serif;
 }
 
 .item-subheader > .btn {
-    font-size: 2.4vw;
+    font-size: 2vw;
 }
 
 .btn.btn-slide::before {
@@ -108,8 +105,8 @@ p span {
 /*button-------------------*/
 @media (max-width: 900px) {
     .container_header {
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 100px;
+        grid-template-columns: 40px repeat(3, 1fr) 40px;
+        grid-template-rows: 40px;
         font-size: 4vw;
     }
 
@@ -163,6 +160,10 @@ p span {
     display: block;
 }
 
+.ava:hover {
+     transform: scale(1.05);
+}
+
 .box-right {
     display: flex;
     flex-direction: column;
@@ -185,8 +186,8 @@ p span {
 
 @media (max-width: 900px) {
     .container_body {
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: minmax(500px, auto) 300px;
+        grid-template-columns: 40px repeat(3, 1fr) 40px;
+        grid-template-rows: minmax(450px, auto) minmax(150px, auto);
     }
 
     .item-11-12 {
@@ -245,8 +246,8 @@ p span {
 
 @media (max-width: 900px) {
     .container_footer {
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 100px;
+        grid-template-columns: 40px repeat(3, 1fr) 40px;
+        grid-template-rows: 50px;
     }
 
     .item-18 {
