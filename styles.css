@@ -62,7 +62,7 @@ p span {
     outline: none;
     position: relative;
     cursor: pointer;
-    font-size: clamp(1rem, 2vw, 4rem);
+    font-size: clamp(1.4rem, 2.3vw, 4.4rem);
     font-weight: bold;
     font-family: 'Orbitron', sans-serif;
 }
@@ -176,14 +176,14 @@ p span {
 }
 
 .p-name {
-    font-size: 4vw;
+    font-size: clamp(1.6rem, 3.5vw, 5rem);
     font-weight: bold;
 }
 
 .p-about-text {
     font-family: 'Istok Web', sans-serif;
     font-style: italic;
-    font-size: 1vw;
+    font-size: clamp(0.5rem, 1vw, 1.6rem);
     text-align: justify;
 }
 
@@ -198,11 +198,13 @@ p span {
     }
 
     .p-name {
-        font-size: 6vw;
+        font-size: clamp(1rem, 2.5vw, 3rem);
     }
+}
 
+@media (max-width: 400px){
     .p-about-text {
-        font-size: 1.7vw;
+        font-size: clamp(0.4rem, 0.7vw, 1.3rem);
     }
 }
 /*------------------------- body -------------------------*/
@@ -235,7 +237,7 @@ p span {
 
 .footer-box-top {
     height: 20px;
-    font-size: 1.6vw;
+    font-size: clamp(1rem, 1.4vw, 2.5rem);
     font-weight: bold;
     padding-left: 10px;
 }
@@ -243,7 +245,7 @@ p span {
 .footer-box-bottom {
     font-family: 'Istok Web', sans-serif;
     font-style: italic;
-    font-size: 1.2vw;
+    font-size: clamp(0.6rem, 1.2vw, 2.5rem);
     padding-left: 10px;
 }
 
@@ -256,13 +258,14 @@ p span {
     .item-footer-pattern {
         display: none;
     }
+}
 
+@media (max-width: 400px) {
     .footer-box-top {
-        font-size: 3vw;
+        font-size: clamp(0.6rem, 1vw, 2.5rem);
     }
-
     .footer-box-bottom {
-        font-size: 1.7vw;
+        font-size: clamp(0.4rem, 0.9vw, 2.5rem);;
     }
 }
 /*------------------------ footer ------------------------*/
@@ -272,7 +275,7 @@ p span {
 .container_body_cases {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: minmax(300px, auto) minmax(300px, auto);
+    grid-template-rows: calc(50vh - 100px) calc(50vh - 100px);
 }
 
 .item-cases-info {
@@ -301,10 +304,6 @@ p span {
     max-width: 100%;
     max-height: 100%;
     display: block;
-}
-
-.photo:hover {
-    transform: scale(1.05);
 }
 
 .box-cases-info {
