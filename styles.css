@@ -163,10 +163,6 @@ p span {
     display: block;
 }
 
-.ava:hover {
-     transform: scale(1.05);
-}
-
 .box-right {
     display: flex;
     flex-direction: column;
@@ -275,9 +271,12 @@ p span {
 .container_body_cases {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: calc(50vh - 100px) calc(50vh - 100px);
+    grid-template-rows: calc(50vh - 100px) calc(50vh - 100px) calc(50vh - 100px);
+    /*grid-template-rows: calc(50vh - 100px) calc(50vh - 100px) calc(50vh - 100px) calc(50vh - 100px) calc(50vh - 100px) calc(50vh - 100px) calc(50vh - 100px) ;*/
 }
-
+.item-cases_rs, .item-cases_ls, .item-cases_rm, .item-cases_lm, .item-tms {
+    display: none;
+}
 .item-cases-info {
     grid-area: span 1 / span 2;
 }
@@ -298,6 +297,7 @@ p span {
     justify-content: center;
     width: 90%;
     height: 95%;
+    /*border: 2px solid crimson;*/
 }
 
 .photo {
@@ -326,22 +326,42 @@ p span {
     text-align: justify;
 }
 
-/*@media (max-width: 900px) {*/
-/*    .container_body_index {*/
-/*        grid-template-columns: 40px repeat(3, 1fr) 40px;*/
-/*        grid-template-rows: minmax(450px, auto) minmax(150px, auto);*/
-/*    }*/
+@media (max-width: 900px) {
+    .container_body_cases {
+        grid-template-columns: 40px repeat(3, 1fr) 40px;
+        grid-template-rows: minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto);
+    }
 
-/*    .item-body-index-space-2, .item-body-index-space-3 {*/
-/*        display: flex;*/
-/*    }*/
+    .item-cases-info-b {
+        display: none;
+    }
 
-/*    .p-name {*/
-/*        font-size: 6vw;*/
-/*    }*/
+    .item-cases-info, .item-tms {
+        grid-area: span 1 / span 2;
+    }
 
-/*    .p-about-text {*/
-/*        font-size: 1.7vw;*/
-/*    }*/
-/*}*/
+    .item-cases_rm, .item-cases_lm, .item-tms{
+        display: flex;
+    }
+}
+
+@media (max-width: 400px) {
+    .container_body_cases {
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-rows: minmax(150px, auto) minmax(40px, auto);
+    }
+
+    .item-cases-info-b {
+        display: none;
+    }
+
+
+    .item-cases-info, .item-tms {
+        grid-area: span 1 / span 1;
+    }
+
+    .item-cases_rm, .item-cases_lm, .item-tms, .item-cases_ls, .item-cases_rs {
+        display: flex;
+    }
+}
 /*------------------------- body-cases -------------------------*/
