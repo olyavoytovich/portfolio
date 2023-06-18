@@ -281,11 +281,18 @@ a:visited {
 
 
 /*------------------------- body-cases -------------------------*/
-.container_body_cases {
+.container_body_cases{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: calc(50vh - 100px) calc(50vh - 100px) calc(50vh - 100px);
 }
+
+.container_body_posters {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: calc(50vh - 100px) calc(50vh - 100px);
+}
+
 .item-cases_rs, .item-cases_ls, .item-cases_rm, .item-cases_lm, .item-tms {
     display: none;
 }
@@ -344,6 +351,13 @@ a:visited {
         grid-template-rows: minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto);
     }
 
+    .container_body_posters {
+        grid-template-columns: 40px repeat(3, 1fr) 40px;
+        grid-template-rows: minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto);
+    }
+
+
+
     .item-cases_rm {
         border-right: none;
     }
@@ -373,6 +387,11 @@ a:visited {
         grid-template-rows: minmax(150px, auto) minmax(40px, auto);
     }
 
+    .container_body_posters {
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-rows: minmax(150px, auto) minmax(40px, auto);
+    }
+
     .item-cases-info-b {
         display: none;
     }
@@ -390,3 +409,4 @@ a:visited {
     }
 }
 /*------------------------- body-cases -------------------------*/
+

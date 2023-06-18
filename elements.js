@@ -22,7 +22,7 @@ http.onload = function(){
                 <div class="item item-cases_ls"></div>
                 <div class="item item-cases-info">
                     <div class="box-cases-info">
-                        <div><p class="p-title">${item.title}</p></div>
+                        <div><a href="${item.title}.html" class="p-title">${item.title}</a></div>
                         <div>
                             <p class="p-description-text">
                                 <span>${item.description}</span>
@@ -38,7 +38,7 @@ http.onload = function(){
                 <div class="item item-cases_lm"></div>
                 <div class="item item-cases-info-b">
                     <div class="box-cases-info">
-                        <div><p class="p-title">${item.title}</p></div>
+                        <div><a href="${item.title}.html" class="p-title">${item.title}</a></div>
                         <div>
                             <p class="p-description-text">
                                 <span>${item.description}</span>
@@ -55,7 +55,7 @@ http.onload = function(){
                 <div class="item item-cases_ls"></div>                
                 <div class="item item-tms">
                     <div class="box-cases-info">
-                        <div><p class="p-title">${item.title}</p></div>
+                        <div><a href="${item.title}.html" class="p-title">${item.title}</a></div>
                         <div>
                             <p class="p-description-text">
                                 <span>${item.description}</span>
@@ -103,16 +103,16 @@ header.innerHTML =`
     </div>
     <div class="item item-header-space-2"></div>
     <div class="item item-subheader">
-        <button class="btn btn-slide">UI/UX</button>
+        <button class="btn btn-slide" onclick="window.location.href = 'posters.html';">Posters</button>
     </div>
     <div class="item item-subheader">
-        <button class="btn btn-slide">Logos</button>
+        <button class="btn btn-slide" onclick="window.location.href = 'logos.html';">Logos</button>
     </div>
     <div class="item item-subheader">
-        <button class="btn btn-slide">Posters</button>
+        <button class="btn btn-slide" onclick="window.location.href = 'UI-UX.html'">UI/UX</button>
     </div>
     <div class="item  item-subheader">
-        <button class="btn btn-slide">Others</button>
+        <button class="btn btn-slide"  onclick="window.location.href = 'others.html'">Others</button>
     </div>
 </div>
 `;
