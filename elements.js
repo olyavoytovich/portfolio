@@ -103,16 +103,16 @@ header.innerHTML =`
     </div>
     <div class="item item-header-space-2"></div>
     <div class="item item-subheader">
-        <button class="btn btn-slide" onclick="window.location.href = 'posters.html';">Posters</button>
+        <button class="btn btn-slide" onclick="window.location.href = 'Posters.html';">Posters</button>
     </div>
     <div class="item item-subheader">
-        <button class="btn btn-slide" onclick="window.location.href = 'logos.html';">Logos</button>
+        <button class="btn btn-slide" onclick="window.location.href = 'Logos.html';">Logos</button>
     </div>
     <div class="item item-subheader">
         <button class="btn btn-slide" onclick="window.location.href = 'UI-UX.html'">UI/UX</button>
     </div>
     <div class="item  item-subheader">
-        <button class="btn btn-slide"  onclick="window.location.href = 'others.html'">Others</button>
+        <button class="btn btn-slide"  onclick="window.location.href = 'Others.html'">Others</button>
     </div>
 </div>
 `;
