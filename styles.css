@@ -241,9 +241,22 @@ p span {
 .footer-box-bottom {
     font-family: 'Istok Web', sans-serif;
     font-style: italic;
-    font-size: clamp(0.6rem, 1.2vw, 2.5rem);
+    font-size: clamp(0.6rem, 1.2vw, 1rem);
     padding-left: 10px;
 }
+
+a:link {
+    color: var(--accent-color);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--accent-color);
+    background-color: transparent;
+    text-decoration: none;
+}
+
 
 @media (max-width: 900px) {
     #footer {
@@ -272,20 +285,19 @@ p span {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: calc(50vh - 100px) calc(50vh - 100px) calc(50vh - 100px);
-    /*grid-template-rows: calc(50vh - 100px) calc(50vh - 100px) calc(50vh - 100px) calc(50vh - 100px) calc(50vh - 100px) calc(50vh - 100px) calc(50vh - 100px) ;*/
 }
 .item-cases_rs, .item-cases_ls, .item-cases_rm, .item-cases_lm, .item-tms {
     display: none;
 }
-.item-cases-info {
+.item-cases-info, .item-cases-info-b {
     grid-area: span 1 / span 2;
 }
 
-.item-cases-space-2, .item-cases-space-4{
+.item-cases_r{
     border-right: none;
 }
 
-.item-cases-photo, .item-cases-info {
+.item-cases-photo, .item-cases-info, .item-cases-info-b {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -315,14 +327,14 @@ p span {
 }
 
 .p-title {
-    font-size: 4vw;
+    font-size: clamp(1rem, 2vw, 3rem);
     font-weight: bold;
 }
 
 .p-description-text {
     font-family: 'Istok Web', sans-serif;
     font-style: italic;
-    font-size: 1vw;
+    font-size: clamp(0.7rem, 1vw, 1.2rem);
     text-align: justify;
 }
 
@@ -330,6 +342,10 @@ p span {
     .container_body_cases {
         grid-template-columns: 40px repeat(3, 1fr) 40px;
         grid-template-rows: minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto);
+    }
+
+    .item-cases_rm {
+        border-right: none;
     }
 
     .item-cases-info-b {
@@ -343,9 +359,15 @@ p span {
     .item-cases_rm, .item-cases_lm, .item-tms{
         display: flex;
     }
+
+    .item-tms {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .container_body_cases {
         grid-template-columns: 40px 1fr 40px;
         grid-template-rows: minmax(150px, auto) minmax(40px, auto);
@@ -355,6 +377,9 @@ p span {
         display: none;
     }
 
+    .item-cases_rs {
+        border-right: none;
+    }
 
     .item-cases-info, .item-tms {
         grid-area: span 1 / span 1;

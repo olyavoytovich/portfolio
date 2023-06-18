@@ -1,38 +1,5 @@
 console.log('hellooo')
 
-// let http = new XMLHttpRequest();
-// http.open('get', 'data.json', true);
-// http.send();
-// http.onload = function(){
-//     if(this.readyState === 4 && this.status === 200){
-//         let products = JSON.parse(this.responseText);
-//         let output = "";
-//         for(let item of products){
-//             output += `
-//             <div class="item item-cases-space-1"></div>
-//             <div class="item item-cases-photo">
-//                 <div class="box-photo">
-//                     <img src="${item.image_b}" alt="photo-1" class="photo">
-//                 </div>
-//             </div>
-//             <div class="item item-cases-info">
-//                 <div class="box-cases-info">
-//                     <div><p class="p-title">${item.title}</p></div>
-//                     <div>
-//                         <p class="p-description-text">
-//                             <span>${item.description}</span>
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//             <div class="item item-cases-space-1"></div>
-// <!--            <div class="item item-cases-space-1"></div>-->
-//             `;
-//         }
-//         document.querySelector(".container_body_cases").innerHTML = output;
-//     }
-// }
-
 let http = new XMLHttpRequest();
 http.open('get', 'data.json', true);
 http.send();
@@ -118,7 +85,6 @@ http.onload = function(){
                 </div>
                 <div class="item item-cases_r"></div>
                 `;
-
         }
         document.querySelector(".container_body_cases").innerHTML = output;
     }
@@ -158,8 +124,9 @@ footer.innerHTML = `
             <p>Contact</p>
         </div>
         <div class="footer-box-bottom">
-            <p>Email</p>
-            <p>Telegram</p>
+            <a href="mailto:olga.voytovich14@gmail.com" target=”_blank”>Email</a>
+            <br>
+            <a href="https://t.me/lyoka_iz_yanova" target=”_blank”>Telegram</a>
         </div>
     </div>
     <div class="item item-footer-box item-footer-box-2">
@@ -167,8 +134,9 @@ footer.innerHTML = `
             <p>Social</p>
         </div>
         <div class="footer-box-bottom">
-            <p>Pinterest</p>
-            <p>Instagram</p>
+            <a href="https://pl.pinterest.com/volha_vaitovich/" target=”_blank”>Pinterest</a>
+            <br>
+            <a href="https://www.instagram.com/volha_vaitovich/" target=”_blank”>Instagram</a>
         </div>
     </div>
     <div class="item item-footer-box item-footer-box-3">
@@ -176,8 +144,9 @@ footer.innerHTML = `
             <p></p>
         </div>
         <div class="footer-box-bottom">
-            <p>LinkedIn</p>
-            <p>Behance</p>
+            <a href="https://www.linkedin.com/in/volha-vaitovich/" target=”_blank”>LinkedIn</a>
+            <br>
+            <a href="https://www.behance.net/b7f84af0" target=”_blank”>Behance</a>
         </div>
     </div>
     <div class="item item-footer-pattern"></div>
